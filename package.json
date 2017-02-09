@@ -1,0 +1,32 @@
+{
+  "name": "line-test",
+  "version": "1.0.0",
+  "files": [
+    "bin"
+  ],
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel --presets es2015 src --out-dir bin",
+    "create": "npm run transpile && claudia create --region eu-west-1 --api-module bin/bot",
+    "update": "npm run transpile && claudia update --cache-api-config claudiaConfigCache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yipcma/line-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yipcma/line-test/issues"
+  },
+  "homepage": "https://github.com/yipcma/line-test#readme",
+  "dependencies": {
+    "claudia-bot-builder": "^2.13.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "line-test-executor",
+    "name": "line-test",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "vacdrn62i7",
+    "module": "bin/bot"
+  }
+}
